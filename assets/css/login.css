@@ -24,7 +24,6 @@ html {
   margin: 15px auto;
 }
 .login_Module .table_enroll {
-  display: none;
   padding: 0 43px;
 }
 .login_Module .table_enroll .layui-form-item {
@@ -42,6 +41,7 @@ html {
   float: right;
 }
 .login_Module .table_register {
+  display: none;
   padding: 0 43px;
 }
 .login_Module .table_register .layui-form-item {

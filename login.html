@@ -20,7 +20,7 @@
     <div class="login_Module">
         <div class="table_hd"><img src="./assets/images/login_title.png" alt=""></div>
         <div class="table_enroll">
-            <form class="layui-form" action="">
+            <form class="layui-form" action="" id="form">
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-username"></i>
                     <input type="text" name="title" required lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
@@ -30,17 +30,17 @@
                     <input type="password" name="title" required lay-verify="required|psw" placeholder="请输入密码" autocomplete="off" class="layui-input">
                 </div>
                 <div class="layui-form-item">
-                    <button type="button" class="layui-btn layui-btn-fluid" lay-submit>登录</button>
+                    <button class="layui-btn layui-btn-fluid" lay-submit>登录</button>
                 </div>
                 <div id="line_res">去注册</div>
 
             </form>
         </div>
         <div class="table_register">
-            <form class="layui-form" action="">
+            <form class="layui-form" action="" id="form2">
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-username"></i>
-                    <input type="text" name="title" required lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
+                    <input type="text" name="title" required lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input" id="username">
                 </div>
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-password"></i>
@@ -51,7 +51,7 @@
                     <input type="password" name="title" required lay-verify="required|psw|repsw" placeholder="确认密码" autocomplete="off" class="layui-input">
                 </div>
                 <div class="layui-form-item">
-                    <button type="button" class="layui-btn layui-btn-fluid" lay-submit>登录</button>
+                    <button class="layui-btn layui-btn-fluid" lay-submit>登录</button>
                 </div>
                 <div id="line_enroll">登录</div>
 
