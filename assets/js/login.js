@@ -37,6 +37,11 @@ $(function() {
         // })
     $('#form').on('submit', function(event) {
         event.preventDefault();
+        const data = $(this).serialize();
+        console.log(data);
+        $.post('http://www.liulongbin.top:3007/api/login', data, function(res) {
+            console.log(res);
+        })
     })
     $('#form2').on('submit', function(event) {
         event.preventDefault();
@@ -45,7 +50,7 @@ $(function() {
             password: $('#password').val()
         }
 
-        $.post('http://ajax.frontend.itheima.net/api/reguser', data, function(res) {
+        $.post('http://www.liulongbin.top:3007/api/reguser', data, function(res) {
             console.log(res);
         })
         console.log(1);
