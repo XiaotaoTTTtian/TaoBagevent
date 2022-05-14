@@ -1,0 +1,33 @@
+.layui-footer {
+  text-align: center;
+}
+.text_pic {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: aqua;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+}
+.layui-header .logo {
+  display: inline-block;
+  margin-left: 212px;
+}
+.layui-body .box #iframe {
+  width: 1336px;
+  height: 745px;
+  margin-bottom: 44px;
+}
+.iconfont {
+  margin-right: 10px;
+}
+.layui-icon {
+  margin-right: 5px;
+}
+li dl {
+  margin-left: 20px;
+}
+.layui-nav .layui-nav-item {
+  margin-left: 10px;
+}

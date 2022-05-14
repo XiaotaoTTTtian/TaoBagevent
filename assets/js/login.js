@@ -27,7 +27,7 @@ $(function() {
         event.preventDefault();
         const data = $(this).serialize();
         console.log(data);
-        $.post('http://www.liulongbin.top:3007/api/login', data, function(res) {
+        $.post('/api/login', data, function(res) {
             console.log(res);
             if (res.status != 0) {
                 return alert('登录失败');
@@ -39,7 +39,7 @@ $(function() {
     $('#form2').on('submit', function(event) {
         event.preventDefault();
         data = $(this).serialize();
-        $.post('http://www.liulongbin.top:3007/api/reguser', data, function(res) {
+        $.post('/api/reguser', data, function(res) {
             console.log(res);
             if (res.status != 0) {
                 return layer.msg(res.message);
