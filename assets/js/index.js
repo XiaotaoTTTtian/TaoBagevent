@@ -1,21 +1,7 @@
 $(function() {
         let layer = layui.layer;
         // console.log(layer);
-        $.ajax({
-                method: 'get',
-                url: '/my/userinfo',
-                // header: localStorage.getItem('key'),
-                // headers: {
-                //     'Authorization': localStorage.getItem('key')
-                // },
-                success: function(res) {
-                    console.log(res);
-                    if (res.status != 0) {
-                        return layer.msg(res.message);
-                    }
-                    getUserPic(res.data);
-                }
-            })
+        getRender()
             // 退出
         $('#exit').click(function() {
             // console.log(1);
@@ -29,7 +15,25 @@ $(function() {
         })
 
     })
-    // 设置用户昵称和图片
+    // 发送请求
+function getRender() {
+    $.ajax({
+        method: 'get',
+        url: '/my/userinfo',
+        // header: localStorage.getItem('key'),
+        // headers: {
+        //     'Authorization': localStorage.getItem('key')
+        // },
+        success: function(res) {
+            console.log(res);
+            if (res.status != 0) {
+                return layer.msg(res.message);
+            }
+            getUserPic(res.data);
+        }
+    })
+}
+// 设置用户昵称和图片
 function getUserPic(data) {
     let uname = data.nickname || data.username;
     let pic = (uname + '').charAt(0).toUpperCase();

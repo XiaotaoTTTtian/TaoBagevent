@@ -5,9 +5,9 @@ $.ajaxPrefilter(function(option) {
     if (pattern.test(option.url)) {
         option.headers = { Authorization: localStorage.getItem('key') }
     }
-    console.log(option);
+    // console.log(option);
     option.complete = function(res) {
-        console.log(res);
+        // console.log(res);
         if (res.responseJSON.status === 1 && res.responseJSON.message === '身份认证失败！') {
             // console.log(1);
             localStorage.removeItem('key');

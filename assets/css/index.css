@@ -17,7 +17,6 @@
 .layui-body .box #iframe {
   width: 1336px;
   height: 745px;
-  margin-bottom: 44px;
 }
 .iconfont {
   margin-right: 10px;
@@ -30,4 +29,13 @@ li dl {
 }
 .layui-nav .layui-nav-item {
   margin-left: 10px;
+}
+.user_info {
+  display: none;
+}
+.user_pwd {
+  display: none;
+}
+.user_avter {
+  display: none;
 }
