@@ -1,0 +1,26 @@
+html,
+body {
+    /* background-color: #fff; */
+    background-color: #f2f3f5;
+    padding: 15px;
+}
+
+.layui-card {
+    background-color: #fff;
+}
+
+.layui-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#form_add input {
+    width: 300px;
+    margin: 25px;
+}
+
+#form_edit input {
+    width: 300px;
+    margin: 25px;
+}
