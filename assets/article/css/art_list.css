@@ -1,0 +1,15 @@
+html,
+body {
+    /* background-color: #fff; */
+    background-color: #f2f3f5;
+    padding: 15px;
+}
+
+.layui-card {
+    background-color: #fff;
+}
+
+#form_edit input {
+    width: 300px;
+    margin: 25px;
+}
